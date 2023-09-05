@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Courgette&family=Dancing+Script:wght@500&family=Kaushan+Script&family=Lato&family=Merienda:wght@300;400&family=Merriweather:wght@300&family=Nabla&family=Poppins:wght@200&family=Qwitcher+Grypen:wght@700&family=Raleway:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,400;1,400;1,500&family=Tilt+Prism&display=swap');
+
+.outer {
+    background-image: linear-gradient(45deg, rgb(18, 128, 122), rgb(14, 249, 108));
+    min-height: 100vh;
+
+
+}
+
+
+
+.div-inside {
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    gap: 30px;
+    padding: 50px 20px 20px 20px;
+    min-height: 90vh;
+    align-items: center;
+
+
+
+
+}
+
+.background-class {
+    background-color: rgb(22, 22, 47);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Scheduler-heading {
+    font-size: 44px;
+    color: white;
+    font-family: Merienda;
+
+}
+
+.color-icon {
+    color: white;
+    font-size: 40px
+}
+
+.event-class {
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: black 2px solid;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.event-class::placeholder {
+    color: black;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+.date-class {
+    color: black;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: black 2px solid
+}
+
+.date-class::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+
+.displayingEditButton {
+    display: none;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+@media screen and (min-width:768px) {
+    .row-container {
+        width: 70%
+    }
+}
+
+@media screen and (min-width:1281px) {
+    .row-container {
+        width: 50%
+    }
+}
+
+
+
+.button-aligning {
+    align-self: flex-end;
+}
+
+.error-para {
+    color: rgb(192, 55, 55);
+}
+
+.button-class {
+    background-color: black;
+    color: #fff;
+    font-family: lato;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    width: 70px
+}
+
+.save-button-class {
+    background-color: rgb(55, 181, 55);
+    text-transform: capitalize;
+    color: #fff;
+    font-family: lato;
+    border: none;
+    border-radius: 5px;
+}
+
+.second-container {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    padding-top: 30px;
+    min-height: 20vh;
+}
+
+@media screen and (min-width:768px) {
+    .second-container {
+        width: 70%
+    }
+}
+
+@media screen and (min-width:1281px) {
+    .second-container {
+        width: 50%
+    }
+}
+
+.border-enter {
+    animation: moving 0.3s ease-in 1 forwards;
+    background-color: antiquewhite;
+    outline: none;
+}
+
+@keyframes moving {
+    0% {
+            border-bottom: none;
+
+    }
+
+    100% {
+        border-bottom: 2px solid black;
+    }
+
+}
+
+.ul-element {
+    width: 100%;
+    padding: 0px;
+
+}
+
+
+
+
+.save-align {
+    align-self: flex-start;
+    margin-left: 0px
+}
+
+.liElement {
+    background-color: #f6f8fb;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 1px 2px 5px black;
+    margin: 30px 0px
+}
+
+@media screen and (min-width:768px) {
+    .liElement {
+        margin: 20px 0px;
+
+
+    }
+}
+
+.liElement:nth-child(2n-1) {
+    border-left: solid 9px rgb(202, 85, 85);
+}
+
+.liElement:nth-child(2n) {
+    border-left: solid 9px rgb(225, 195, 46);
+
+}
+
+.for-direction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.specific-name {
+    font-size: 15px;
+    font-family: Merriweather;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.heading-event {
+    font-weight: normal;
+    font-size: 17px;
+    font-family: lato;
+    margin-bottom: 5px;
+    padding-bottom: 0px
+}
+
+.icon-style-head {
+    cursor: pointer;
+    margin-bottom: 4px
+}
+
+@media screen and (min-width:768px) {
+    .for-direction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .underline {
+        text-decoration: none;
+    }
+
+    .specific-name {
+        font-size: 19px;
+        align-self: center;
+        padding: 0px;
+        margin: 0px 10px 0px 0px
+    }
+
+    .heading-event {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+}
+
+.row-direction {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.for-gap {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .row-direction {
+        margin-bottom: 0px;
+        margin-top: 10px;
+        align-self: center;
+        padding: 0px
+    }
+
+    .for-gap {
+        margin-bottom: 0px;
+    }
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+
+
+
+.para-date {
+    font-weight: normal;
+    font-size: 16px;
+    font-family: lato;
+
+    margin-bottom: 5px;
+
+}
+
+@media screen and (min-width:768px) {
+    .para-date {
+        font-size: 18px;
+    }
+}
+
+
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.margin-class {
+
+    margin-bottom: 10px;
+    margin-left: 4px;
+    cursor: pointer
+}
+
+.button-aligning {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px
+}
+
+.input-class-edit {
+    border-top: 2px #272626 solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 90%;
+    margin-left: 0px;
+    outline: none;
+}
+
+.input-class-edit::-webkit-calendar-picker-indicator {
+    cursor: pointer
+}
+
+.for-label {
+    color: black;
+    font-weight: 700;
+    font-family: Merriweather;
+
+}
+
+.secPara-element {
+    align-self: center;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-family: roboto;
+    font-weight: 500;
+    color: rgb(67, 63, 63)
+}
+
+@media screen and (min-width:768px) {
+    .secPara-element {
+        font-size: 14px;
+    }
+}
+
+.icon-style {
+    cursor: pointer
+}
+
+
